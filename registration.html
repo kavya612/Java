@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Application Form </title>
+        
+    </head>
+    <BODY style="background-image: url(FORM.jpg)">
+        <table CellPadding=10 width="700" align="center" bgcolor="#5CB297">
+            <center>
+                <caption align="top">
+                    <h2> Application form </h2>
+                </caption>
+            </center>
+            <form method="POST">
+                <font face="COURIER NEW">
+                    <FONT SIZE="4">
+                        <TR>
+                            <TD> First Name </TD>
+                            <td> <input type="text" name="Fname" size="30" maxlength="30" value="" style="background-color:#FFFFFF;border-color:#800000" tabindex="1" required autofocus></td>
+                        </TR>
+                        <tr>
+                            <td> Last Name</td>
+                            <td> <input type="text" name="Ename1" size="30" maxlength="30" value="" tabindex="2"></td>
+                            <br>
+                            </tr>
+                            <tr>
+                                <td> Education</td>
+                                <td> <input type="checkbox" name="Education" value="Graduate" checked>
+                                    Graduate
+                                    <input type="checkbox" name="Education" value="Post Graduate">
+                                    Post Graduate
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td> Gender</td>
+                                <td>
+                                    <input type="radio" name="Gender" value="Male" checked> Male
+                                    <input type="radio" name="Gender" value="Female"> Female
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> Salary</td>
+                                <td>
+                                    <input type="password" name="Salary" size="10">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> Comments </td>
+                                <td> <textarea rows="5" cols="50" wrap="physical" tabindex="8"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    State
+                                </td>
+                                
+                                <td>
+                                    <select name="state" tabindex="9">
+                                        <option> Andhra</option>
+                                        <option> Bihar</option>
+                                        <option> HP</option>
+                                        <option> Karnataka</option>
+                                        <option> Kerala</option>
+                                        <option> Tamil Nadu</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> Programming Languages</td>
+                                <td>
+                                    <input list="Languages" />
+                                    <datalist id="Languages">
+                                        <option value="COBOL"></option>
+                                        <option value="Fortran"></option>
+                                        <option value="C"></option>
+                                        <option value="C++"></option>
+                                        <option value="Java"></option>
+                                        <option value="Python"></option>
+                                        <option value="PHP"></option>
+                                        <option value="C#"></option>
+                                        <option value="VB 6.0"></option>
+                                    </datalist>
+                                </td>
+                            </tr>
+                           
+                               
+                               <tr>
+                                 <td> Select color</td>
+                                 <td> <input id="background-color" type="color"/></td>
+                                </tr>
+                                <tr>
+                                    <td> Meeting date </td>
+                                    <td>
+                                        <input id="meeting" type="date"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Meeting Date & Time</td>
+                                    <td>
+                                        <input id="mdate" type="datetime-local" name="mdate">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Email</td>
+                                    <td>
+                                        <input id="email" type="email" required/>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Web site</td>
+                                    <td>
+                                        <input type="url" name="website" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Phone</td>
+                                    <td>
+                                        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required/>
+                                    </td>
+                                </tr>
+                                <!-- Submit-->
+                                <tr> 
+                                        <td colspan="2" align="center">
+                                 <input type="submit" name="click" size="20" value="submit" tabindex="10" onclick='processForm()'/></td>
+                                 
+                                </tr>
+                            </font>
+
+
+                    </FONT>
+                </font>
+            </form>
+        </table> 
+        
+
+        
+    
+</html>

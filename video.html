@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <script type = "text/javascript">
+                function PlayVideo() {
+                   var v = document.getElementsByTagName("video")[0];  
+                   v.play(); 
+                }
+             </script>
+    </head>
+    <style>
+        .button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(20px);
+}
+    </style>
+    <body>
+        <div id="video">
+        <!---<video width="320" height="240" controls>
+            <source src="D:/html/video.mp4" type="video/mp4">
+               
+        </video>-->
+        <audio controls>
+            <source src="D:/html/ringtone.mp3" type="audio/mp3">
+        </audio>
+        <p>Your browser does not support video tag. </p>
+        </div>
+        <form>         
+                <video width = "300" height = "200" src = "D:/html/video.mp4">
+                Your browser does not support the video element.
+                </video>
+                <br />
+               <!--- <input type = "button" onclick = "PlayVideo();" value = "Play"/>-->
+                <button class="button" onclick="PlayVideo();">Click Me</button>
+             </form>
+    </body>
+</html>

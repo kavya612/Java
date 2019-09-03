@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #timerdiv
+        {
+            background:rgb(27, 244, 252);
+            height: 50px;
+            width:100px;
+            border-radius:15px;
+            padding:20px;
+            font-size:30px;
+            color:#fff;
+            margin:50px auto;
+            text-align:center;
+            text-shadow:2px 2px #ff0000;
+            color:#333;
+        }
+    </style>
+</head>
+<body>
+    <div id="timerdiv">
+
+    </div>
+    <script>
+    window.setInterval(function(){CurrentLocalTime() },1000);
+    function CurrentLocalTime () {
+        var dte=new Date();
+        var tme=dte.toLocaleTimeString();
+        document.getElementById("timerdiv").innerHTML=tme;
+
+    }
+    </script>
+</body>
+</html>

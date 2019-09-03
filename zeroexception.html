@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+        function zeroFunc() {
+        
+            try
+            {
+                var a=10;
+                var b=0;
+                var c;
+                
+                if(b==0)
+                {
+                    throw("Divide by zero");
+                  
+                }
+                else
+                {
+                    c=a/b;
+                    alert(c); 
+                }
+            }
+            catch(e)
+            {
+                alert("Error: " +e);
+            }
+         
+        }
+        </script>
+    </head>
+    <body>
+        <form>
+       <input type="button" value="click" onclick="zeroFunc()"/>
+    </form>
+      
+        
+    </body>
+</html>

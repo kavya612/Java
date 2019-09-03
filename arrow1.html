@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2> Javascript Arrow function</h2>
+        <p id="demo"> </p>
+        <p id="dem"></p>
+        <p id="sqr"> </p>
+        <p id="greater"> </p>
+        <script>
+        var hello;
+        
+        hello=() => "Hello World";
+       document.getElementById("demo").innerHTML=hello();
+
+       var x=parseInt(window.prompt("Enter a: "));
+        var y=parseInt(window.prompt("Enter b: "));
+      
+         const add1= (a,b) => a+b;
+        document.getElementById("dem").innerHTML=add1(x,y);
+
+        const square=(x) => x*x;
+        document.getElementById("sqr").innerHTML=square(10);
+
+        var points=(multiplier,bonus) => {
+            var score=multiplier*10;
+            score *=(1+bonus);
+            return score;
+        };
+        document.write(points(3,2));
+
+        const greatest=(a,b)=> {if(a>b){document.write(a);}else {document.write(b);}};
+        document.getElementById("greater").innerHTML=greatest(1,2);
+        </script>
+        
+    </body>
+</html>

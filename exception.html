@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+        function MyFunc() {
+        
+            try
+            {
+                test();
+            }
+            catch(e)
+            {
+                document.getElementById("errorMsg").innerHTML = e;
+            }
+         
+        }
+        </script>
+    </head>
+    <body>
+        <p> Exception handling demo: </p>
+        <form> 
+            <input type="button" value="Click Me" onclick = "MyFunc();" />
+         </form>
+      
+        <div id="errorMsg"> </div>
+    </body>
+</html>

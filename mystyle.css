@@ -1,0 +1,107 @@
+body{
+    background-image: url("D:/html/blur.jpg")
+}
+#header
+{
+    background-color:greenyellow;
+    color:brown;
+    text-align:center;
+    font-family:'Bernard MT';
+    padding:5px;
+}
+#navlinks {
+    line-height:30px;
+    background-color:aquamarine;
+    height:760px;
+    width:150px;
+    float:left;
+}
+#navlinks ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    width:150px;
+    background-color:#f1f1f1;
+}
+#navlinks li a{
+    display:block;
+    color:#000;
+    padding:8px 16px;
+    text-decoration:none;
+}
+#navlinks li a:hover
+{
+    background-color:#ff0000;
+    color:white;
+}
+
+
+#section {
+    width:960px;
+    height:700px;
+    float:left;
+    padding:10px;
+    text-align:justify;
+    color:blue;
+    background-image:url("responsive.gif");
+    background-position: bottom;
+    background-repeat:no-repeat;
+}
+span{
+    color:red;
+    font-weight:bold;
+}
+#section p{
+    color:black;
+}
+#Post {
+    width:850px;
+    height:210px;
+    
+    padding:10px;
+    text-align:justify;
+    color:green;
+ 
+    background-color: coral;
+    background-repeat:no-repeat;
+}
+#Post p {
+    color:black;
+    font-family:arial;
+}
+#aside
+
+{
+    float:right;
+    background-color:goldenrod;
+    width:200px;
+    height:760px;
+    text-align:justify;
+    
+}
+#aside h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    font-size: medium;
+}
+#aside p{
+    color:green;
+    font-family:arial;
+    font-family: 'Courier New', Courier, monospace;
+    align-content: center;
+    text-align: center;
+}
+#footer
+{
+    background-color:YEllow;
+    color:orangered;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
+#footer h3{
+    font-family:arial;
+    color:black;
+
+}
+

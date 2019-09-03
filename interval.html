@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+
+<style>
+#divcls {
+  background: green;
+  height: 100px;
+  width:100px;
+  border-radius: 100px;
+  padding:10px;
+  font-size:22px;
+  color:#fff; 
+  margin-left :40%;
+
+}
+ 
+
+
+
+</style>
+ 
+  
+</head>
+<body>
+<div id="divcls">
+<p> <button class="btncls" onclick="clearint()"> Stop by clearing intervals </button></p>
+</div>
+<script>
+
+var stoptoggle=setInterval(function(){ func_setInterval() }, 500);
+
+function func_setInterval(){
+if (document.getElementById("divcls").style.backgroundColor == 'green')
+{
+    document.getElementById("divcls").style.backgroundColor = 'blue';
+}
+else if (document.getElementById("divcls").style.backgroundColor == 'blue')
+{
+    document.getElementById("divcls").style.backgroundColor = 'red';
+}
+else{
+    document.getElementById("divcls").style.backgroundColor = 'green';
+}
+
+}
+function clearint() {
+    clearInterval(stoptoggle);
+}
+
+    
+</script> 
+ 
+</body>
+</html>
